@@ -1,0 +1,1450 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/API/"
+     xml:base="http://www.semanticweb.org/API/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:API="http://www.semanticweb.org/API#"
+     xmlns:URL="https://bioportal.bioontology.org/ontologies/URL/#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:URL1="https://bioportal.bioontology.org/ontologies/URL/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://bioportal.bioontology.org/ontologies/URL/">
+        <dc:creator>Francis Kiptengwer Chemorion
+Marc-Antonio Bisotti</dc:creator>
+        <dc:creator>https://creativecommons.org/licenses/by-sa/4.0/</dc:creator>
+        <dc:description>This ontology provides a standardized approach for annotating URLs to support autonomous data curation agents in the biomedical domain. It includes detailed representations of URL components, parameters, and associated metadata.</dc:description>
+        <dc:title>Towards Autonomous Data Curation Agents: A URL Annotation Standard</dc:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/API#hasBaseURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/API#hasBaseURL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/API#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/API#hasDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/API#hasVersion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/API#hasVersion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/hasAPIName -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/hasAPIName"/>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAccessRestrictions -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAccessRestrictions">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuth_Parameters -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuth_Parameters">
+        <rdfs:subPropertyOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#isRequestOf"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuth_Scheme -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuth_Scheme">
+        <rdfs:subPropertyOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#isRequestOf"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Host_DomainName_IDN -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Host_DomainName_IDN">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Host_DomainName_Subdomains -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Host_DomainName_Subdomains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Host_DomainName_TLD -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Host_DomainName_TLD">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Host_IPAddress_IPv4 -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Host_IPAddress_IPv4">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Host_IPAddress_IPv6 -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Host_IPAddress_IPv6">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Password -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Password">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Port -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Port">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_UserInfo_Password -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_UserInfo_Password">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_UserInfo_Username -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_UserInfo_Username">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Username -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasAuthority_Username">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasBody_Examples -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasBody_Examples">
+        <rdfs:subPropertyOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#isRequestOf"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasBody_MediaType -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasBody_MediaType">
+        <rdfs:subPropertyOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#isRequestOf"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasBody_Schema -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasBody_Schema">
+        <rdfs:subPropertyOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#isRequestOf"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasContentType -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasContentType">
+        <rdfs:subPropertyOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#isRequestOf"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasDocumentationURL -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasDocumentationURL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasEndpointType -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasEndpointType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasFragment -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasFragment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasHeaders_Description -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasHeaders_Description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#isRequestOf"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasHeaders_Name -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasHeaders_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#isRequestOf"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasHeaders_Value -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasHeaders_Value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#isRequestOf"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasIRI -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasIRI">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasMethod -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasMethod">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasName -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasPath_Segments_DotSegments -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasPath_Segments_DotSegments">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasPath_Segments_Static -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasPath_Segments_Static">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasPath_Segments_Variable -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasPath_Segments_Variable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasPercentEncoding -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasPercentEncoding">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasQuery_Parameter_Description -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasQuery_Parameter_Description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasQuery_Parameter_Name -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasQuery_Parameter_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasQuery_Parameter_Required -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasQuery_Parameter_Required">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasQuery_Parameter_Type -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasQuery_Parameter_Type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasQuery_Parameter_Value -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasQuery_Parameter_Value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasRateLimits -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasRateLimits">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasReservedCharacters -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasReservedCharacters">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasResourceType -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasResourceType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasScheme -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasScheme">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasStatusCode_Code -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasStatusCode_Code">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasStatusCode_Description -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasStatusCode_Description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasStatusCode_ReasonPhrase -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasStatusCode_ReasonPhrase">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasType -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasType"/>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasURL -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasURL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasURN -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasURN">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#hasUnreservedCharacters -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#hasUnreservedCharacters">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#isComponentsOf -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#isComponentsOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#isEncodingOf -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#isEncodingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#isEndpointOf -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#isEndpointOf"/>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#isMethodOf -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#isMethodOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#isPropertiesOf -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#isPropertiesOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#isRequestOf -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#isRequestOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#isResponseOf -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#isResponseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#isURIOf -->
+
+    <owl:DatatypeProperty rdf:about="https://bioportal.bioontology.org/ontologies/URL/#isURIOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/API#API -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/API#API">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#Endpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/API#Endpoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/API#Endpoint">
+        <rdfs:comment>An Endpoint is a specific point of interaction within an API where resources are accessed or operations are performed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Access_Restrictions -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Access_Restrictions">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Additional_Properties"/>
+        <dc:description>Describes the security or access limitations applied to the endpoint or API, such as authentication requirements.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Additional_Properties -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Additional_Properties">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#Endpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Authentication -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Authentication">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Request"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Authority -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Authority">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URL_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Base_URL -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Base_URL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#API"/>
+        <dc:description>The root URL from which all endpoint paths are derived, serving as the base address for the API.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Body -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Body">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Request"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Response"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Code -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Code">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Status_Code"/>
+        <dc:description>Indicates the status code returned by the server to describe the outcome of the request. Common codes include 200 for success and 404 for not found.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Content_Type -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Content_Type">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Request"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Response"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#DELETE -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#DELETE">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Description -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Description">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#API"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Header"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Parameter"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Status_Code"/>
+        <dc:description>Provides a summary of what the API offers, detailing its main functionalities and use cases.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Documentation_URL -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Documentation_URL">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Additional_Properties"/>
+        <dc:description>Gives a link to a webpage with more detailed information about the endpoint.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Domain_Name -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Domain_Name">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Host"/>
+        <owl:disjointWith rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#IP_Address"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Dot-segments -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Dot-segments">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Path_Segments"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Encoding -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Encoding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#Endpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Endpoint_Type -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Endpoint_Type">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Additional_Properties"/>
+        <dc:description>Classifies the type of Endpoint, such as RESTful or SOAP, based on its operational mechanics and structure.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Endpoints -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Endpoints">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#API"/>
+        <dc:description>Defines a list of operational points under an API, where each Endpoint represents a specific functionality or data access point.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Examples -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Examples">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Body"/>
+        <dc:description>Sample data demonstrating what the request body should look like, aiding in testing and implementation.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Fragment -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Fragment">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URL_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#GET -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#GET">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#HEAD -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#HEAD">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#Endpoint"/>
+        <dc:description>HTTP methods are a set of request methods to indicate the desired action to be performed for a given resource. Each method implies a specific operation and HTTP semantics.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Header -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Header">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Headers"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Headers -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Headers">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Request"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Response"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Host -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Host">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Authority"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#IP_Address -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#IP_Address">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Host"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#IPv4_Address -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#IPv4_Address">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#IP_Address"/>
+        <owl:disjointWith rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#IPv6_Address"/>
+        <dc:description>A 32-bit number that identifies a specific interface on a network, using a dotted decimal format.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#IPv6_Address -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#IPv6_Address">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#IP_Address"/>
+        <dc:description>A 128-bit address that allows a greater number of devices to be connected directly to the internet, noted for its colon-separated hexadecimal format.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#IRI -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#IRI">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URI"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Internationalized_Domain_Name -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Internationalized_Domain_Name">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Domain_Name"/>
+        <dc:description>Domain names that include characters beyond the basic ASCII set, accommodating the full range of scripts and symbols used globally.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Media_Type -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Media_Type">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Body"/>
+        <dc:description>The format of the media type expected by the request, commonly defined as MIME types.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Name -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#API"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Header"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Parameter"/>
+        <dc:description>Denotes the formal name of the API, used for identification and reference.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#OPTIONS -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#OPTIONS">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#PATCH -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#PATCH">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#POST -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#POST">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#PUT -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#PUT">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Parameter -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Parameter">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Query"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Parameters -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Parameters">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Authentication"/>
+        <owl:disjointWith rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Scheme"/>
+        <dc:description>Parameters required for establishing authenticated communication between client and server, often as part of the header or URL query.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Password -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Password">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#User_Information"/>
+        <owl:disjointWith rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Username"/>
+        <dc:description>Part of the credentials required for accessing a protected resource or service, not recommended to be used openly in URLs due to security concerns.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Path -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Path">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URL_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Path_Segments -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Path_Segments">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Path"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Percent-encoding -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Percent-encoding">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Encoding"/>
+        <dc:description>Method for encoding information in a Uniform Resource Identifier (URI) under certain circumstances. Although commonly called URL encoding, it is, in fact, used more generally within the main Uniform Resource Identifier (URI) set, which includes both Uniform Resource Locator (URL) and Uniform Resource Name (URN).</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Port -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Port">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Authority"/>
+        <dc:description>The port number associated with the server, directing traffic to specific services running on a host.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Query -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Query">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URL_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Rate_Limits -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Rate_Limits">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Additional_Properties"/>
+        <dc:description>Specifies the number of requests that can be made to an Endpoint within a given time frame, important for managing system load and service availability.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Reason_Phrase -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Reason_Phrase">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Status_Code"/>
+        <dc:description>A brief, standardized description of the status code, providing immediate insight into the result of the HTTP request.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Request -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Request">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#Endpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Required -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Required">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Reserved_Characters -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Reserved_Characters">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Encoding"/>
+        <dc:description>Characters that are reserved within a URL for special use within the scheme component, they must be encoded if they are to be used within the user data.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Resource_Type -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Resource_Type">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Additional_Properties"/>
+        <dc:description>Indicates the type of data or resource that the Endpoint handles, such as &apos;genomic data&apos; or &apos;clinical trial information&apos;.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Response -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Response">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#Endpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Schema -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Schema">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Body"/>
+        <dc:description>A definition or schema specifying the structure of the request body. It often follows a specified format such as JSON Schema or XML Schema.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Scheme -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Scheme">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Authentication"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URL_Components"/>
+        <dc:description>The method used for authenticating a request, such as Basic, Digest, or OAuth.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Static_Segment -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Static_Segment">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Path_Segments"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Status_Code -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Status_Code">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Response"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Subdomains -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Subdomains">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Domain_Name"/>
+        <dc:description>Part of the domain that is a subset of a larger domain under the DNS hierarchy. Subdomains can represent different services or sections of a website.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Top-Level_Domain -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Top-Level_Domain">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Domain_Name"/>
+        <dc:description>The highest level of the domain structure, such as &apos;.com&apos; or &apos;.org&apos;, representing either the type of entity or geographical location.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Type -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Type">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#URI -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#URI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#Endpoint"/>
+        <dc:description>Components of the Uniform Resource Identifier (URI), where URL specifies location, URN specifies name, and IRI is an internationalized form of URI allowing characters from the universal character set.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#URL -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#URL">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URI"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#URL_Components -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#URL_Components">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#Endpoint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#URN -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#URN">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URI"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Unreserved_Characters -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Unreserved_Characters">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Encoding"/>
+        <dc:description>Characters that can be freely used in a URI without the need to be encoded. These characters are alphanumeric, and the special characters &quot;-&quot;, &quot;.&quot;, &quot;_&quot;, and &quot;~&quot;.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#User_Information -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#User_Information">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Authority"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Username -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Username">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#User_Information"/>
+        <dc:description>The user identification used in conjunction with a password to gain access to a secured system or resource.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Value -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Value">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Header"/>
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Variable_Segment -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Variable_Segment">
+        <rdfs:subClassOf rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Path_Segments"/>
+    </owl:Class>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/#Version -->
+
+    <owl:Class rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Version">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/API#API"/>
+        <dc:description>Indicates the version of the API, helping to manage updates and compatibility.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/ID -->
+
+    <owl:NamedIndividual rdf:about="https://bioportal.bioontology.org/ontologies/URL/ID">
+        <rdf:type rdf:resource="http://www.semanticweb.org/API#API"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/API#Endpoint"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Encoding"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Request"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Response"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URI"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URL_Components"/>
+        <API:hasBaseURL>API_BaseURL</API:hasBaseURL>
+        <API:hasDescription>API_Description</API:hasDescription>
+        <API:hasDescription>Endpoint_Description</API:hasDescription>
+        <API:hasVersion>API_Version</API:hasVersion>
+        <URL1:hasAPIName>API_Name</URL1:hasAPIName>
+        <URL:hasAccessRestrictions>Endpoint_AccessRestrictions</URL:hasAccessRestrictions>
+        <URL:hasAuth_Parameters>Request_Auth_Parameters</URL:hasAuth_Parameters>
+        <URL:hasAuth_Scheme>Request_Auth_Scheme</URL:hasAuth_Scheme>
+        <URL:hasAuthority_Host_DomainName_IDN>URLComp_Authority_Host_DomainName_IDN</URL:hasAuthority_Host_DomainName_IDN>
+        <URL:hasAuthority_Host_DomainName_Subdomains>URLComp_Authority_Host_DomainName_Subdomains</URL:hasAuthority_Host_DomainName_Subdomains>
+        <URL:hasAuthority_Host_DomainName_TLD>URLComp_Authority_Host_DomainName_TLD</URL:hasAuthority_Host_DomainName_TLD>
+        <URL:hasAuthority_Host_IPAddress_IPv4>URLComp_Authority_Host_IPAddress_IPv4</URL:hasAuthority_Host_IPAddress_IPv4>
+        <URL:hasAuthority_Host_IPAddress_IPv6>URLComp_Authority_Host_IPAddress_IPv6</URL:hasAuthority_Host_IPAddress_IPv6>
+        <URL:hasAuthority_Port>URLComp_Authority_Port</URL:hasAuthority_Port>
+        <URL:hasAuthority_UserInfo_Password>URLComp_Authority_UserInfo_Password</URL:hasAuthority_UserInfo_Password>
+        <URL:hasAuthority_UserInfo_Username>URLComp_Authority_UserInfo_Username</URL:hasAuthority_UserInfo_Username>
+        <URL:hasBody_Examples>Request_Body_Examples</URL:hasBody_Examples>
+        <URL:hasBody_Examples>Response_Body_Examples</URL:hasBody_Examples>
+        <URL:hasBody_MediaType>Request_Body_MediaType</URL:hasBody_MediaType>
+        <URL:hasBody_MediaType>Response_Body_MediaType</URL:hasBody_MediaType>
+        <URL:hasBody_Schema>Request_Body_Schema</URL:hasBody_Schema>
+        <URL:hasBody_Schema>Response_Body_Schema</URL:hasBody_Schema>
+        <URL:hasContentType>Request_ContentType</URL:hasContentType>
+        <URL:hasContentType>Response_ContentType</URL:hasContentType>
+        <URL:hasDocumentationURL>Endpoint_DocumentationURL</URL:hasDocumentationURL>
+        <URL:hasFragment>URLComp_Fragment</URL:hasFragment>
+        <URL:hasHeaders_Description>Request_Headers_Description</URL:hasHeaders_Description>
+        <URL:hasHeaders_Description>Response_Headers_Description</URL:hasHeaders_Description>
+        <URL:hasHeaders_Name>Request_Headers_Name</URL:hasHeaders_Name>
+        <URL:hasHeaders_Name>Response_Headers_Name</URL:hasHeaders_Name>
+        <URL:hasHeaders_Value>Request_Headers_Value</URL:hasHeaders_Value>
+        <URL:hasHeaders_Value>Response_Headers_Value</URL:hasHeaders_Value>
+        <URL:hasIRI>URI_IRI</URL:hasIRI>
+        <URL:hasMethod>HTTPMethod</URL:hasMethod>
+        <URL:hasName>Endpoint_Name</URL:hasName>
+        <URL:hasPath_Segments_DotSegments>URLComp_Path_Segments_DotSegments</URL:hasPath_Segments_DotSegments>
+        <URL:hasPath_Segments_Static>URLComp_Path_Segments_Static</URL:hasPath_Segments_Static>
+        <URL:hasPath_Segments_Variable>URLComp_Path_Segments_Variable</URL:hasPath_Segments_Variable>
+        <URL:hasPercentEncoding>Encoding_PercentEncoding</URL:hasPercentEncoding>
+        <URL:hasQuery_Parameter_Description>URLComp_Query_Parameter_Description</URL:hasQuery_Parameter_Description>
+        <URL:hasQuery_Parameter_Name>URLComp_Query_Parameter_Name</URL:hasQuery_Parameter_Name>
+        <URL:hasQuery_Parameter_Required>URLComp_Query_Parameter_Required</URL:hasQuery_Parameter_Required>
+        <URL:hasQuery_Parameter_Type>URLComp_Query_Parameter_Type</URL:hasQuery_Parameter_Type>
+        <URL:hasQuery_Parameter_Value>URLComp_Query_Parameter_Value</URL:hasQuery_Parameter_Value>
+        <URL:hasRateLimits>Endpoint_RateLimits</URL:hasRateLimits>
+        <URL:hasReservedCharacters>Encoding_ReservedCharacters</URL:hasReservedCharacters>
+        <URL:hasResourceType>Endpoint_ResourceType</URL:hasResourceType>
+        <URL:hasScheme>URLComp_Scheme</URL:hasScheme>
+        <URL:hasStatusCode_Code>Response_StatusCode_Code</URL:hasStatusCode_Code>
+        <URL:hasStatusCode_Description>Response_StatusCode_Description</URL:hasStatusCode_Description>
+        <URL:hasStatusCode_ReasonPhrase>Response_StatusCode_ReasonPhrase</URL:hasStatusCode_ReasonPhrase>
+        <URL:hasType>Endpoint_Type</URL:hasType>
+        <URL:hasURL>URI_URL</URL:hasURL>
+        <URL:hasURN>URI_URN</URL:hasURN>
+        <URL:hasUnreservedCharacters>Encoding_UnreservedCharacters</URL:hasUnreservedCharacters>
+        <URL:isComponentsOf>ID</URL:isComponentsOf>
+        <URL:isEncodingOf>ID</URL:isEncodingOf>
+        <URL:isEndpointOf>ID</URL:isEndpointOf>
+        <URL:isMethodOf>ID</URL:isMethodOf>
+        <URL:isRequestOf>ID</URL:isRequestOf>
+        <URL:isResponseOf>ID</URL:isResponseOf>
+        <URL:isURIOf>ID</URL:isURIOf>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bioportal.bioontology.org/ontologies/URL/1 -->
+
+    <owl:NamedIndividual rdf:about="https://bioportal.bioontology.org/ontologies/URL/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/API#API"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/API#Endpoint"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Encoding"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Request"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#Response"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URI"/>
+        <rdf:type rdf:resource="https://bioportal.bioontology.org/ontologies/URL/#URL_Components"/>
+        <API:hasBaseURL>https://eutils.ncbi.nlm.nih.gov/entrez/eutils/</API:hasBaseURL>
+        <API:hasDescription>Provides a list of UIDs matching a text query</API:hasDescription>
+        <API:hasDescription>Searches and retrieves primary IDs and term translations</API:hasDescription>
+        <API:hasVersion>2</API:hasVersion>
+        <URL1:hasAPIName>ESearch</URL1:hasAPIName>
+        <URL:hasAccessRestrictions>Public</URL:hasAccessRestrictions>
+        <URL:hasAuthority_Host_DomainName_TLD>eutils.ncbi.nlm.nih.gov</URL:hasAuthority_Host_DomainName_TLD>
+        <URL:hasBody_MediaType>application/xml</URL:hasBody_MediaType>
+        <URL:hasContentType>application/x-www-form-urlencoded</URL:hasContentType>
+        <URL:hasDocumentationURL>https://www.ncbi.nlm.nih.gov/books/NBK25499/#chapter4.ESearch</URL:hasDocumentationURL>
+        <URL:hasHeaders_Name>Content-Type</URL:hasHeaders_Name>
+        <URL:hasHeaders_Value>application/xml</URL:hasHeaders_Value>
+        <URL:hasMethod>GET</URL:hasMethod>
+        <URL:hasName>ESearch</URL:hasName>
+        <URL:hasPath_Segments_Static>esearch.fcgi</URL:hasPath_Segments_Static>
+        <URL:hasPercentEncoding>%20</URL:hasPercentEncoding>
+        <URL:hasQuery_Parameter_Description>Database to search, search term</URL:hasQuery_Parameter_Description>
+        <URL:hasQuery_Parameter_Name>db, term</URL:hasQuery_Parameter_Name>
+        <URL:hasQuery_Parameter_Required>true</URL:hasQuery_Parameter_Required>
+        <URL:hasQuery_Parameter_Type>string</URL:hasQuery_Parameter_Type>
+        <URL:hasRateLimits>3/sec, 10/sec with API key</URL:hasRateLimits>
+        <URL:hasReservedCharacters>&amp;,=</URL:hasReservedCharacters>
+        <URL:hasResourceType>PrimaryIDs</URL:hasResourceType>
+        <URL:hasScheme>https</URL:hasScheme>
+        <URL:hasStatusCode_Code>200</URL:hasStatusCode_Code>
+        <URL:hasStatusCode_Description>Successful response</URL:hasStatusCode_Description>
+        <URL:hasStatusCode_ReasonPhrase>OK</URL:hasStatusCode_ReasonPhrase>
+        <URL:hasType>Search</URL:hasType>
+        <URL:hasURL>https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi</URL:hasURL>
+        <URL:hasUnreservedCharacters>a-z, A-Z, 0-9</URL:hasUnreservedCharacters>
+        <URL:isComponentsOf>1</URL:isComponentsOf>
+        <URL:isEncodingOf>1</URL:isEncodingOf>
+        <URL:isEndpointOf>1</URL:isEndpointOf>
+        <URL:isMethodOf>1</URL:isMethodOf>
+        <URL:isRequestOf>1</URL:isRequestOf>
+        <URL:isResponseOf>1</URL:isResponseOf>
+        <URL:isURIOf>1</URL:isURIOf>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/API#API"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Additional_Properties"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Encoding"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#HTTP_Method"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Request"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Response"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#URI"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#URL_Components"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Access_Restrictions"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Documentation_URL"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Endpoint_Type"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Rate_Limits"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Resource_Type"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Authentication"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Body"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Content_Type"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Headers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Authority"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Fragment"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Path"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Query"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Scheme"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Base_URL"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Description"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Endpoints"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Name"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Version"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Body"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Content_Type"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Headers"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Status_Code"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Code"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Description"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Reason_Phrase"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#DELETE"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#GET"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#HEAD"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#OPTIONS"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#PATCH"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#POST"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#PUT"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Description"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Name"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Required"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Type"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Value"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Description"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Name"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Value"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Dot-segments"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Static_Segment"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Variable_Segment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Examples"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Media_Type"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Schema"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Host"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Port"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#User_Information"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#IRI"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#URL"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#URN"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Internationalized_Domain_Name"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Subdomains"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Top-Level_Domain"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Percent-encoding"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Reserved_Characters"/>
+            <rdf:Description rdf:about="https://bioportal.bioontology.org/ontologies/URL/#Unreserved_Characters"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

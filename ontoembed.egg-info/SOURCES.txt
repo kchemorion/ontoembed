@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+ontoembed/__init__.py
+ontoembed/cli.py
+ontoembed/embeddings.py
+ontoembed/ontologies.py
+ontoembed/utils.py
+ontoembed.egg-info/PKG-INFO
+ontoembed.egg-info/SOURCES.txt
+ontoembed.egg-info/dependency_links.txt
+ontoembed.egg-info/entry_points.txt
+ontoembed.egg-info/requires.txt
+ontoembed.egg-info/top_level.txt
+tests/__init__.py

@@ -1,0 +1,4 @@
+rdflib>=5.0.0
+numpy>=1.18.0
+gensim>=4.0.0
+networkx>=2.4
